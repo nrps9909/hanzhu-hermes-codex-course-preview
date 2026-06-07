@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nrps9909.github.io/hanzhu-hermes-codex-course-preview/sitemap.xml

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Codex AI 職場副手實戰">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1f5da8"/>
+      <stop offset="1" stop-color="#10825d"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <path d="M17 20h30v7H26v6h17v7H26v11h-9V20Z" fill="#ffffff"/>
+  <circle cx="47" cy="47" r="6" fill="#ecfdf3"/>
+  <path d="M44.5 47.2 46.5 49.2 50.2 44.8" fill="none" stroke="#10825d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

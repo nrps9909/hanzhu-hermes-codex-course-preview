@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <title>Hermes x Codex AI 職場副手實戰 | 預約資料整理</title>
+  <link rel="canonical" href="https://nrps9909.github.io/hanzhu-hermes-codex-course-preview/register">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #5a6375;
+      --line: #d7dce5;
+      --paper: #ffffff;
+      --soft: #f6f8fb;
+      --brand: #14635c;
+      --warn: #8b3f00;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--soft);
+      line-height: 1.6;
+    }
+    a { color: var(--brand); }
+    .wrap { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
+    header {
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 0;
+    }
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand { font-weight: 800; letter-spacing: 0; }
+    main { padding: 34px 0 54px; }
+    .hero, .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .hero { padding: 28px; }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--brand);
+      font-size: 14px;
+      font-weight: 800;
+    }
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(30px, 5vw, 44px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    .lead {
+      margin: 16px 0 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .panel { padding: 22px; }
+    h2 { margin: 0 0 12px; font-size: 22px; letter-spacing: 0; }
+    label {
+      display: block;
+      margin-top: 14px;
+      font-weight: 750;
+    }
+    input, select, textarea {
+      width: 100%;
+      margin-top: 6px;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font: inherit;
+      background: #fff;
+    }
+    textarea { min-height: 96px; resize: vertical; }
+    .check {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 10px;
+      align-items: start;
+      margin-top: 14px;
+      color: var(--muted);
+    }
+    .check input { width: 18px; margin-top: 4px; }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    button, .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border: 1px solid var(--brand);
+      border-radius: 6px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .secondary {
+      background: #fff;
+      color: var(--brand);
+    }
+    .note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .warning {
+      color: var(--warn);
+      background: #fff8ef;
+      border: 1px solid #f1d2a6;
+      border-radius: 6px;
+      padding: 12px;
+    }
+    .hidden-field { display: none; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+    th, td {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th { width: 110px; color: var(--muted); font-weight: 750; }
+    @media (max-width: 760px) {
+      .top { align-items: flex-start; flex-direction: column; }
+      .grid { grid-template-columns: 1fr; }
+      .hero, .panel { padding: 18px; }
+      main { padding-top: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <div class="brand">Hermes x Codex AI 職場副手實戰</div>
+      <a href="https://nrps9909.github.io/hanzhu-hermes-codex-course-preview/">回課程介紹</a>
+    </div>
+  </header>
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <p class="eyebrow">預約資料整理</p>
+        <h1>先整理你的上課需求，再交給主辦方確認。</h1>
+        <p class="lead">這頁不收密碼、不收公司機密。可直接送出預約資料；若主機未啟用表單收件，也可以複製訊息或寄 Email。</p>
+      </section>
+
+      <div class="grid">
+        <form class="panel" aria-labelledby="form-title" name="course-registration" method="POST" action="thank-you/" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="course-registration">
+          <p class="hidden-field">
+            <label>不要填這個欄位 <input name="bot-field" autocomplete="off"></label>
+          </p>
+          <h2 id="form-title">我要確認是否適合</h2>
+          <label for="name">姓名</label>
+          <input id="name" name="name" autocomplete="name" placeholder="例如: 王小明" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="例如: hello@example.com" required>
+
+          <label for="phone">手機</label>
+          <input id="phone" name="phone" autocomplete="tel" placeholder="方便主辦方聯絡即可" required>
+
+          <label for="role">目前角色</label>
+          <input id="role" name="role" placeholder="例如: 行政、業務、人資、主管、創業者" required>
+
+          <label for="workflow">最想改善的重複工作</label>
+          <select id="workflow" name="workflow" required>
+            <option>文件整理</option>
+            <option>LINE 回覆</option>
+            <option>Gmail / Email</option>
+            <option>報表</option>
+            <option>簡報</option>
+            <option>其他</option>
+          </select>
+
+          <label for="os">上課筆電</label>
+          <select id="os" name="laptop_os" required>
+            <option>Windows</option>
+            <option>macOS</option>
+            <option>其他，想先確認</option>
+          </select>
+
+          <label for="notes">想補充的工作場景</label>
+          <textarea id="notes" name="work_context" placeholder="不用放真實客戶資料，描述流程就好。"></textarea>
+
+          <label class="check">
+            <input id="safe" name="sensitive_data_agreement" type="checkbox" value="agreed" required>
+            <span>我知道課前與課堂中不要提供密碼、信用卡、金融帳號、完整客戶個資或公司機密。</span>
+          </label>
+
+          <div class="actions">
+            <button type="submit">送出預約資料</button>
+            <button type="button" id="copy-message">複製詢問訊息</button>
+            
+          </div>
+          <p class="note" id="copy-status" aria-live="polite">送出後會看到確認頁；若主機未啟用表單收件，請改用複製訊息或 Email。</p>
+        </form>
+
+        <aside class="panel" aria-labelledby="info-title">
+          <h2 id="info-title">主辦方核准資訊</h2>
+          <table>
+            <tbody>
+              <tr><th>開課日期</th><td>審閱版，不開放報名</td></tr>
+              <tr><th>場地</th><td>審閱版，不開放報名</td></tr>
+              <tr><th>名額</th><td>審閱版，不開放報名</td></tr>
+              <tr><th>費用</th><td>審閱版，不開放收費</td></tr>
+              <tr><th>報名截止</th><td>審閱版，不開放報名</td></tr>
+              <tr><th>付款方式</th><td>審閱版，不開放付款</td></tr>
+              <tr><th>補課 / 錄影</th><td>審閱版，不開放報名 / 審閱版，不開放報名</td></tr>
+              <tr><th>退費 / 候補</th><td>審閱版，不開放付款 / 審閱版，不開放報名</td></tr>
+            </tbody>
+          </table>
+          <p class="warning">正式報名、付款、退費、補課、錄影、證書、候補與團報，以主辦方最後公告為準。</p>
+          <p class="note">公司團報或內訓請在詢問訊息中留下人數、角色與窗口。</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <script>
+    const values = () => ({
+      name: document.querySelector("#name").value.trim() || "未填",
+      email: document.querySelector("#email").value.trim() || "未填",
+      phone: document.querySelector("#phone").value.trim() || "未填",
+      role: document.querySelector("#role").value.trim() || "未填",
+      workflow: document.querySelector("#workflow").value,
+      os: document.querySelector("#os").value,
+      notes: document.querySelector("#notes").value.trim() || "未填",
+      safe: document.querySelector("#safe").checked ? "已確認不提供敏感資料" : "尚未勾選敏感資料提醒"
+    });
+    const buildMessage = () => {
+      const data = values();
+      return [
+        "您好，我想詢問 " + "Hermes x Codex AI 職場副手實戰" + "。",
+        "姓名: " + data.name,
+        "Email: " + data.email,
+        "手機: " + data.phone,
+        "角色: " + data.role,
+        "最想改善的工作: " + data.workflow,
+        "上課筆電: " + data.os,
+        "工作場景: " + data.notes,
+        "資料安全: " + data.safe,
+        "請問這個場景適合上課練習嗎? 也想確認正式報名、付款、補課、候補或下一梯資訊。"
+      ].join("\n");
+    };
+    const updateEmail = () => {
+      const link = document.querySelector("#email-link");
+      if (!link) return;
+      link.href = "&body=" + encodeURIComponent(buildMessage());
+    };
+    document.querySelectorAll("input, select, textarea").forEach((node) => {
+      node.addEventListener("input", updateEmail);
+      node.addEventListener("change", updateEmail);
+    });
+    document.querySelector("#copy-message").addEventListener("click", async () => {
+      const status = document.querySelector("#copy-status");
+      try {
+        await navigator.clipboard.writeText(buildMessage());
+        status.textContent = "已複製。請貼到官方 LINE、Email 或主辦方指定窗口。";
+      } catch {
+        status.textContent = "瀏覽器無法自動複製，請手動選取欄位內容整理後送出。";
+      }
+      updateEmail();
+    });
+    updateEmail();
+  </script>
+</body>
+</html>
