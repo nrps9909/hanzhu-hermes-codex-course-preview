@@ -43,7 +43,7 @@
         "name": "需要會寫程式嗎?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "不需要。課程先用 Hermes Desktop 應用程式完成看得見的成果，再慢慢補資料夾、規則、重跑與必要的 CLI。"
+          "text": "不需要。課程先用 Hermes Desktop 應用程式完成看得見的成果，再慢慢補資料夾、規則、重跑與必要的進階設定。"
         }
       },
       {
@@ -64,10 +64,10 @@
       },
       {
         "@type": "Question",
-        "name": "日期、費用、補課、證書怎麼算?",
+        "name": "開課資訊在哪裡?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "這些行政條件以翰竺教育訓練中心正式公告或私訊回覆為準。本頁只協助你判斷課程方向是否適合。"
+          "text": "日期、地點、費用、名額與報名連結先留空；確認後填入本頁的開課資訊欄。"
         }
       }
     ]
@@ -183,11 +183,6 @@
       color: var(--ink);
       box-shadow: none;
     }
-    .button.pending {
-      background: #6b7280;
-      box-shadow: none;
-      cursor: not-allowed;
-    }
     .hero {
       min-height: 500px;
       display: grid;
@@ -256,6 +251,11 @@
       font-size: 14px;
       font-weight: 850;
     }
+    .course-info { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 14px 0 0; }
+    .course-info div { border: 1px solid rgba(31, 93, 168, .18); border-radius: 8px; padding: 10px 12px; background: rgba(255, 255, 255, .78); }
+    .course-info dt { color: var(--muted); font-size: 12px; font-weight: 900; }
+    .course-info dd { margin: 5px 0 0; min-height: 18px; }
+    .course-info dd::after { content: ""; display: block; min-height: 14px; border-bottom: 1px solid #aebbd0; }
     section {
       border-bottom: 1px solid var(--line);
       padding: 44px 0;
@@ -534,6 +534,7 @@
         padding: 7px 9px;
         font-size: 13px;
       }
+      .course-info div { padding: 9px 10px; }
       section { padding: 30px 0; }
       .section-head {
         margin-bottom: 14px;
@@ -639,7 +640,7 @@
       <nav class="nav" aria-label="頁面導覽">
         <a href="#outcomes">成果</a>
         <a href="#faq">FAQ</a>
-        <a class="button" href="#reserve" data-track-action="reserve_nav" data-track-label="top-nav">私訊確認</a>
+        <a class="button" href="#reserve" data-track-action="reserve_nav" data-track-label="top-nav">詢問 / 報名</a>
       </nav>
     </div>
   </header>
@@ -650,17 +651,24 @@
         <div class="hero-copy">
           <p class="eyebrow">給第一次想用 Hermes 叫 AI 做事的人</p>
           <h1><span class="h1-line">Hermes AI</span><span class="h1-line">職場副手實戰</span></h1>
-          <p class="lead">這不是 CLI 安裝課，也不是要學一堆 Codex 名詞。帶一台筆電，從 Hermes Desktop App 開始，學會開任務、選資料、看成果，把文件、報表、網站、LINE 草稿與可重跑工作流做出來。</p>
+          <p class="lead">不用先會寫程式。帶一台筆電，從 Hermes Desktop App 開始，學會開任務、選資料、檢查成果，把文件、報表、網站小工具、LINE 草稿與可重跑工作流做出來。</p>
           <div class="actions">
-            <a class="button" href="#reserve" data-track-action="reserve_hero" data-track-label="hero">先問我適不適合</a>
+            <a class="button" href="#reserve" data-track-action="reserve_hero" data-track-label="hero">詢問 / 報名</a>
             <a class="button secondary" href="#outcomes" data-track-action="view_outcomes" data-track-label="hero">看 3 個成果</a>
           </div>
-          <p class="hero-note">課程資訊、日期、費用、補課與正式報名方式，以翰竺教育訓練中心公告為準。</p>
           <ul class="facts" aria-label="課程快照">
             <li>7 次課，共 21 小時</li>
             <li>安裝改用 App</li>
             <li>Hermes 使用主軸</li>
           </ul>
+          <dl class="course-info" aria-label="開課資訊">
+            <div><dt>日期</dt><dd aria-label="待填"></dd></div>
+            <div><dt>地點</dt><dd aria-label="待填"></dd></div>
+            <div><dt>費用</dt><dd aria-label="待填"></dd></div>
+            <div><dt>名額</dt><dd aria-label="待填"></dd></div>
+            <div><dt>報名連結</dt><dd aria-label="待填"></dd></div>
+            <div><dt>洽詢方式</dt><dd aria-label="待填"></dd></div>
+          </dl>
         </div>
       </div>
     </section>
@@ -669,7 +677,7 @@
       <div class="wrap">
         <div class="section-head">
           <h2>上完先帶走 3 個 Hermes 使用能力。</h2>
-          <p>不要把時間耗在 CLI 安裝。先會用 Hermes 交辦任務、檢查 AI 成果、把成功做法保存起來。</p>
+          <p>不要把時間耗在終端機安裝。先會用 Hermes 交辦任務、檢查 AI 成果、把成功做法保存起來。</p>
         </div>
         <div class="cards">
           <article class="card">
@@ -694,7 +702,7 @@
     <section class="demo" id="demo">
       <div class="wrap demo-layout">
         <div class="section-head">
-          <h2>Hermes 要教，但不再把 CLI 安裝當主菜。</h2>
+          <h2>Hermes 要教，安裝改用應用程式。</h2>
           <p>Hermes Desktop 讓安裝變簡單，所以課程要把時間放在使用：怎麼開任務、怎麼選資料、怎麼看結果、怎麼保留人工確認。</p>
           <ul class="simple-list">
             <li>Hermes 是課程主軸，Codex 是背後執行能力。</li>
@@ -741,12 +749,12 @@
       <div class="wrap">
         <div class="section-head">
           <h2>先看 4 題就好。</h2>
-          <p>不把完整行政細節塞在第一頁。先確認方向，正式條件以主辦方回覆為準。</p>
+          <p>先判斷這門課是不是你要的，不用一次讀完所有行政細節。</p>
         </div>
         <div class="faq">
           <details open>
             <summary>需要會寫程式嗎?</summary>
-            <p>不需要。課程先用 Hermes Desktop 應用程式完成看得見的成果，再慢慢補資料夾、規則、重跑與必要的 CLI。</p>
+            <p>不需要。課程先用 Hermes Desktop 應用程式完成看得見的成果，再慢慢補資料夾、規則、重跑與必要的進階設定。</p>
           </details>
           <details>
             <summary>上課要準備什麼?</summary>
@@ -757,8 +765,8 @@
             <p>可以，但請先脫敏，不要帶密碼、客戶個資、合約全文、薪資、金流或公司機密。不確定時就改用課堂假資料。</p>
           </details>
           <details>
-            <summary>日期、費用、補課、證書怎麼算?</summary>
-            <p>這些行政條件以翰竺教育訓練中心正式公告或私訊回覆為準。本頁只協助你判斷課程方向是否適合。</p>
+            <summary>開課資訊在哪裡?</summary>
+            <p>日期、地點、費用、名額與報名連結先留空；確認後填入本頁的開課資訊欄。</p>
           </details>
         </div>
       </div>
@@ -767,13 +775,12 @@
     <section id="reserve" class="reserve">
       <div class="wrap reserve-layout">
         <div class="reserve-panel">
-          <h2>想知道自己適不適合?</h2>
-          <p>先私訊，不用寫長表單。說你的角色、想改善的工作、目前有沒有用過 Hermes，就能先判斷從哪個場景開始。</p>
+          <h2>詢問 / 報名</h2>
+          <p>把右邊這段複製出去，先用你的工作場景確認適不適合。正式開課資訊就填在頁首空白欄。</p>
           <a class="button" href="https://nrps9909.github.io/hanzhu-hermes-codex-course-preview/register" target="_blank" rel="noopener" data-track-action="reserve_official" data-track-label="reserve">私訊預約課程</a>
-          <p class="fineprint">點擊上方連結後，請以主辦方頁面或 LINE 官方帳號回覆為準。正式報名、日期、名額、費用、補課、證書、團報與候補，以主辦方公告為準。</p>
         </div>
         <aside class="message-box" aria-label="可複製預約訊息">
-          <p id="reserve-message">您好，我想詢問 Hermes AI 職場副手實戰。我的角色是：____。我目前有 / 沒有用過 Hermes。最想改善的工作是：文件 / 報表 / 網站小工具 / LINE / Gmail / 簡報 / 其他：____。不能碰的資料是：密碼 / 客戶個資 / 公司機密。請問這個場景適合上課練習嗎? 也想確認開課日期、費用、名額、補課或下一梯資訊。</p>
+          <p id="reserve-message">您好，我想詢問 Hermes AI 職場副手實戰。我的角色是：____。我目前有 / 沒有用過 Hermes。最想改善的工作是：文件 / 報表 / 網站小工具 / LINE / Gmail / 簡報 / 其他：____。請協助我確認是否適合，也想知道開課日期、費用、名額與報名方式。</p>
           <div class="copy-row js-only">
             <button class="button secondary" type="button" data-copy-target="reserve-message" data-track-action="copy_reserve_message" data-track-label="reserve">複製詢問訊息</button>
             <span class="copy-status" aria-live="polite"></span>
@@ -785,11 +792,11 @@
   </main>
 
   <footer>
-    <div class="wrap">HJ-AI-101 Hermes AI 職場副手實戰 | 翰竺教育訓練中心 x AgentJE | 課程資訊以主辦方公告為準</div>
+    <div class="wrap">HJ-AI-101 Hermes AI 職場副手實戰 | 翰竺教育訓練中心 x AgentJE</div>
   </footer>
   <nav class="mobile-cta" aria-label="手機快速操作">
     <a class="button secondary" href="#outcomes" data-track-action="view_outcomes_mobile" data-track-label="mobile-cta">看成果</a>
-    <a class="button" href="#reserve" data-track-action="reserve_mobile" data-track-label="mobile-cta">私訊確認</a>
+    <a class="button" href="#reserve" data-track-action="reserve_mobile" data-track-label="mobile-cta">詢問 / 報名</a>
   </nav>
   <script>
     (() => {
