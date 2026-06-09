@@ -167,7 +167,7 @@
       <section class="hero">
         <p class="eyebrow">預約資料整理</p>
         <h1>先整理你的上課需求，再交給主辦方確認。</h1>
-        <p class="lead">這頁不收密碼、不收公司機密。可直接送出預約資料；若主機未啟用表單收件，也可以複製訊息或寄 Email。</p>
+        <p class="lead">這頁不收密碼、不收公司機密。目前是審閱版，不會送出正式報名；請先複製訊息給主辦方確認。</p>
       </section>
 
       <div class="grid">
@@ -215,11 +215,11 @@
           </label>
 
           <div class="actions">
-            <button type="submit">送出預約資料</button>
+            <button type="button" disabled aria-disabled="true">審閱版不送出</button>
             <button type="button" id="copy-message">複製詢問訊息</button>
             
           </div>
-          <p class="note" id="copy-status" aria-live="polite">送出後會看到確認頁；若主機未啟用表單收件，請改用複製訊息或 Email。</p>
+          <p class="note" id="copy-status" aria-live="polite">審閱版不送出表單；請改用複製訊息。</p>
         </form>
 
         <aside class="panel" aria-labelledby="info-title">
@@ -282,7 +282,7 @@
       const status = document.querySelector("#copy-status");
       try {
         await navigator.clipboard.writeText(buildMessage());
-        status.textContent = "已複製。請貼到官方 LINE、Email 或主辦方指定窗口。";
+        status.textContent = "已複製。請貼到官方 LINE 或主辦方指定窗口。";
       } catch {
         status.textContent = "瀏覽器無法自動複製，請手動選取欄位內容整理後送出。";
       }
